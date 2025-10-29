@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <title>Contact Me - Manuel Diaz</title>
+</head>
+<body>
+    <div>
+        <button class="botonhome">
+            <a href="inicio.html">
+                <img class="imghome" src="home.png" alt="Home">
+            </a>
+        </button>
+    </div>
+    
+    <div class="textoiniciocontact">
+        <h1>Let's connect!</h1>
+        <h2>Complete the form below to contact me</h2>
+    </div>
+    
+    <div class="imagenepica">
+        <img src="fotoepica.png" alt="Profile picture">
+    </div>
+    
+    <form action="/Enviar" method="post">
+        <label for="nombre">Your Name:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefono">Phone Number:</label>
+        <input type="tel" id="telefono" name="telefono">
+        
+        <label for="mensaje">Presentation message:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <label for="pais">Region:</label>
+        <select id="pais" name="pais">
+            <option value="northamerica">North America</option>
+            <option value="southamerica">South America</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="oceania">Oceania</option>
+            <option value="africa">Africa</option>
+        </select>
+        
+        <input type="submit" value="Send">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
